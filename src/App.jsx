@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 
 import TopBar from './commanpage/Topbar';
 import Header from './commanpage/Header';
@@ -9,23 +9,25 @@ import MainOfficial from './commanpage/Officer_login';
 import RequestList from './RTI/RTI';
 import Navbar from './Dashboard/mainmenu';
 import RTIRequestDetails from './form/Form';
-import { useLocation, Outlet } from "react-router-dom";
 import './App.css';
 
 function App() {
   const location = useLocation();
-  const hideNavbarOnHome = location.pathname === "/";
+
+ 
+  const hideNavbarPaths = ['/nicpioportal'];
+  const hideNavbar = hideNavbarPaths.includes(location.pathname);
 
   return (
     <>
       <TopBar />
       <Header />
-      {!hideNavbarOnHome && <Navbar />}
+      {!hideNavbar && <Navbar />}
 
       <Routes>
-        <Route path="/pedro-portfolio" element={<MainOfficial />} />
-        <Route path="/pedro-portfolio/requests" element={<RequestList />} />
-        <Route path="/pedro-portfolio/details" element={<RTIRequestDetails />} />
+        <Route path="/nicpioportal" element={<MainOfficial />} />
+        <Route path="/nicpioportal/requests" element={<RequestList />} />
+        <Route path="/nicpioportal/details" element={<RTIRequestDetails />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
 
@@ -35,4 +37,5 @@ function App() {
 }
 
 export default App;
+
 

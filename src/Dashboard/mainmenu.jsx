@@ -38,10 +38,10 @@ const Navbar = () => {
       <nav style={{ display: 'flex', gap: '20px', color: 'white', fontSize: '11px', fontWeight: '500' }}>
         <a href="#" style={linkStyle}>HOME</a>
         <a href="#" style={linkStyle}>SEARCH</a>
-        <a href="/pedro-portfolio/details" style={linkStyle}>ASSIGNMENT</a>
+        <a href="/nicpioportal/details" style={linkStyle}>ASSIGNMENT</a>
         <a href="#" style={linkStyle}>UTILITY</a>
-        <a href="/pedro-portfolio/requests" style={linkStyle}>REPORTS</a>
-        <a href="/pedro-portfolio" style={linkStyle} onClick={handleLogout}>LOGOUT</a>
+        <a href="/nicpioportal/requests" style={linkStyle}>REPORTS</a>
+        <a href="/nicpioportal " style={linkStyle} onClick={handleLogout}>LOGOUT</a>
       </nav>
     </div>
   );
