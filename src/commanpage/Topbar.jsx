@@ -87,7 +87,7 @@ const TopBar = () => {
                 <Dropdown.Item
                   as="span"
                   className="py-2 px-3"
-                  onClick={() => (window.location.href = 'http://localhost:5173/')}
+                  onClick={() => (window.location.href = '/pedro-portfolio')}
                 >
                   <i className="fa fa-bank"></i>&nbsp; Official Login
                 </Dropdown.Item>

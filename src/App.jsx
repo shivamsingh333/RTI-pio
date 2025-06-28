@@ -23,9 +23,9 @@ function App() {
       {!hideNavbarOnHome && <Navbar />}
 
       <Routes>
-        <Route path="/" element={<MainOfficial />} />
-        <Route path="/requests" element={<RequestList />} />
-        <Route path="/details" element={<RTIRequestDetails />} />
+        <Route path="/pedro-portfolio" element={<MainOfficial />} />
+        <Route path="/pedro-portfolio/requests" element={<RequestList />} />
+        <Route path="/pedro-portfolio/details" element={<RTIRequestDetails />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
 

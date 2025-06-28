@@ -59,7 +59,7 @@ const Header = () => {
         <i className="fa fa-user"></i> Citizen Login
       </Dropdown.Item>
       <Dropdown.Divider className="m-0" />
-      <Dropdown.Item onClick={() => (window.location.href = 'http://localhost:5173/')} className="py-2 px-4 fw-medium">
+      <Dropdown.Item onClick={() => (window.location.href = '/pedro-portfolio')} className="py-2 px-4 fw-medium">
         <i className="fa fa-bank"></i> Official Login
       </Dropdown.Item>
     </Dropdown.Menu>
@@ -86,7 +86,7 @@ const Header = () => {
             Right to Information Online Portal
           </div>
           <div className="text-wrap w-100" style={{ fontSize: '8px' }}>
-            An initiative of Administrative Reforms, Training, Pension and Public Grievances Department, Government of Assam
+            An initiative of Administrative Reforms, Training, Pension and Public Grievances Department, Government of Tripura
           </div>
         </div>
         <div className="col-2 text-end p-0">

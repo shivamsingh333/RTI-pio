@@ -55,7 +55,7 @@ function MainOfficial() {
       console.log('✅ TOKEN:', token);
       localStorage.setItem('token', JSON.stringify(token));
       setMessage('✅ Login Successful!');
-      setTimeout(() => navigate('/requests'), 1000);
+      setTimeout(() => navigate('/pedro-portfolio/requests'), 1000);
     } catch (err) {
       console.error('Login failed:', err);
       setError('❌ Invalid email or password.');
