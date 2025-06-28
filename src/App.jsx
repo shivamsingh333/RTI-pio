@@ -15,7 +15,7 @@ function App() {
   const location = useLocation();
 
  
-  const hideNavbarPaths = ['/nicpioportal'];
+  const hideNavbarPaths = ['/nicpioportal12'];
   const hideNavbar = hideNavbarPaths.includes(location.pathname);
 
   return (
@@ -25,9 +25,9 @@ function App() {
       {!hideNavbar && <Navbar />}
 
       <Routes>
-        <Route path="/nicpioportal" element={<MainOfficial />} />
-        <Route path="/nicpioportal/requests" element={<RequestList />} />
-        <Route path="/nicpioportal/details" element={<RTIRequestDetails />} />
+        <Route path="/nicpioportal12" element={<MainOfficial />} />
+        <Route path="/nicpioportal12/requests" element={<RequestList />} />
+        <Route path="/nicpioportal12/details" element={<RTIRequestDetails />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
 
