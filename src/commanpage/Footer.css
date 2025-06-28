@@ -1,0 +1,22 @@
+.footer {
+  background-color: #1c75bc; 
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #ffffff80; 
+  margin: 20px auto;
+  width: 90%;
+}
+
+.footer .H1, .footer .H2 {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 auto;
+  max-width: 90%;
+  line-height: 1.6;
+}  
