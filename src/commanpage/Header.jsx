@@ -59,7 +59,7 @@ const Header = () => {
         <i className="fa fa-user"></i> Citizen Login
       </Dropdown.Item>
       <Dropdown.Divider className="m-0" />
-      <Dropdown.Item onClick={() => (window.location.href = '/nicpioportal12')} className="py-2 px-4 fw-medium">
+      <Dropdown.Item onClick={() => (window.location.href = '/nic-pioportal12')} className="py-2 px-4 fw-medium">
         <i className="fa fa-bank"></i> Official Login
       </Dropdown.Item>
     </Dropdown.Menu>

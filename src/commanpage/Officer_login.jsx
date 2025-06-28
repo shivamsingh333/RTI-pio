@@ -55,7 +55,7 @@ function MainOfficial() {
       console.log('✅ TOKEN:', token);
       localStorage.setItem('token', JSON.stringify(token));
       setMessage('✅ Login Successful!');
-      setTimeout(() => navigate('/nicpioportal12/requests'), 1000);
+      setTimeout(() => navigate('/nic-pioportal12/requests'), 1000);
     } catch (err) {
       console.error('Login failed:', err);
       setError('❌ Invalid email or password.');

@@ -14,9 +14,9 @@ import './App.css';
 function App() {
   const location = useLocation();
 
- 
-  const hideNavbarPaths = ['/nicpioportal12'];
-  const hideNavbar = hideNavbarPaths.includes(location.pathname);
+  // For HashRouter, use location.pathname directly
+  const hideNavbarPaths = ['/nic-pioportal12'];
+  const hideNavbar = hideNavbarPaths.some(path => location.pathname === path);
 
   return (
     <>
@@ -25,10 +25,10 @@ function App() {
       {!hideNavbar && <Navbar />}
 
       <Routes>
-        <Route path="/nicpioportal12" element={<MainOfficial />} />
-        <Route path="/nicpioportal12/requests" element={<RequestList />} />
-        <Route path="/nicpioportal12/details" element={<RTIRequestDetails />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/nic-pioportal12" element={<MainOfficial />} />
+        <Route path="/nic-pioportal12/requests" element={<RequestList />} />
+        <Route path="/nic-pioportal12/details" element={<RTIRequestDetails />} />
+        <Route path="*" element={<Navigate to="/nic-pioportal12" />} />
       </Routes>
 
       <Footer />
@@ -37,5 +37,3 @@ function App() {
 }
 
 export default App;
-
-
