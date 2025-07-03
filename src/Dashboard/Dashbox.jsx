@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 const RTIDashboard = () => {
   const [data, setData] = useState({
-    disposedPending: 0,
+    disposedPending: 0
     newRequests: 0,
     underProcess: 0,
     appealsRaised: 0,
